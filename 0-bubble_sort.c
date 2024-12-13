@@ -11,13 +11,13 @@ void bubble_sort(int *array, size_t size)
 	size_t index = 0;
 	int change = 0;
 
-	if (array != NULL)
+	if (array != NULL && size > 1)
 	{
 		/**
 		 * Browse the array and search if the next number is small
 		 *if small reverse the two number and restart the loop
 		 */
-		while (index < size)
+		while (index < size - 1)
 		{
 			change = 0;
 			if (array[index] > array[index + 1])
